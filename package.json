@@ -24,6 +24,6 @@
     "highlight.js"
   ],
   "dependencies": {
-    "highlight.js": "^9.9.0"
+    "highlight.js": "*"
   }
 }

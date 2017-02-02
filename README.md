@@ -1,4 +1,4 @@
-[Vue.js](vuejs.org) syntax highlighting made easy, using [highlight.js](highlightjs.org).
+[Vue.js](https://vuejs.org/) syntax highlighting made easy, using [highlight.js](https://highlightjs.org/).
 
 ## Quickstart
 
