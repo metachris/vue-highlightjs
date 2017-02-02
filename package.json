@@ -1,7 +1,17 @@
 {
   "name": "vue-highlightjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Syntax highlighting with highlight.js for Vue.js 2.x",
+  "homepage": "https://github.com/metachris/vue-highlightjs",
+  "bugs": {
+    "url": "https://github.com/metachris/vue-highlightjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metachris/vue-highlightjs.git"
+  },
+  "author": "Chris Hager <chris@linuxuser.at> (https://www.metachris.com)",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -13,8 +23,6 @@
     "highlight",
     "highlight.js"
   ],
-  "author": "Chris Hager <chris@linuxuser.at> (https://www.metachris.com)",
-  "license": "MIT",
   "dependencies": {
     "highlight.js": "^9.9.0"
   }
