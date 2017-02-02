@@ -1,0 +1,21 @@
+{
+  "name": "vue-highlightjs",
+  "version": "1.0.0",
+  "description": "Syntax highlighting with highlight.js for Vue.js 2.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "syntax",
+    "highlight",
+    "highlight.js"
+  ],
+  "author": "Chris Hager <chris@linuxuser.at> (https://www.metachris.com)",
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.9.0"
+  }
+}
