@@ -7,8 +7,8 @@ vueHighlightJS.install = function (Vue) {
 	deep: true,
 	bind: function (el, binding) {
 		// on first bind, highlight all targets
-		let targets = el.querySelectorAll('code')
-		targets.forEach((target) => {
+		var targets = el.querySelectorAll('code')
+		targets.forEach(function(target) {
 		// if a value is directly assigned to the directive, use this
 		// instead of the element content.
 		if (binding.value) {
@@ -19,8 +19,8 @@ vueHighlightJS.install = function (Vue) {
 	},
 	componentUpdated: function (el, binding) {
 		// after an update, re-fill the content and then highlight
-		let targets = el.querySelectorAll('code')
-		targets.forEach((target) => {
+		var targets = el.querySelectorAll('code')
+		targets.forEach(function(target) {
 		if (binding.value) {
 			target.innerHTML = binding.value
 			hljs.highlightBlock(target)
