@@ -1,33 +1,38 @@
-var hljs = require('highlight.js')
+const hljs = require('highlight.js');
 
-var vueHighlightJS = {}
+const vueHighlightJS = {};
 
-vueHighlightJS.install = function (Vue) {
-	Vue.directive('highlightjs', {
-	deep: true,
-	bind: function (el, binding) {
-		// on first bind, highlight all targets
-		var targets = el.querySelectorAll('code')
-		targets.forEach(function(target) {
-		// if a value is directly assigned to the directive, use this
-		// instead of the element content.
-		if (binding.value) {
-			target.innerHTML = binding.value
-		}
-		hljs.highlightBlock(target)
-		})
-	},
-	componentUpdated: function (el, binding) {
-		// after an update, re-fill the content and then highlight
-		var targets = el.querySelectorAll('code')
-		targets.forEach(function(target) {
-		if (binding.value) {
-			target.innerHTML = binding.value
-			hljs.highlightBlock(target)
-		}
-		})
-	}
-	})
-}
+vueHighlightJS.install = function install(Vue) {
+  Vue.directive('highlightjs', {
+    deep: true,
+    bind: function bind(el, binding) {
+      // on first bind, highlight all targets
+      const targets = el.querySelectorAll('code');
+      for (let i = 0; i < targets.length; i += 1) {
+        const target = targets[i];
 
-module.exports = vueHighlightJS
+        if (binding.value) {
+          // if a value is directly assigned to the directive, use this
+          // instead of the element content.
+          target.innerHTML = binding.value;
+        }
+
+        hljs.highlightBlock(target);
+      }
+    },
+    componentUpdated: function componentUpdated(el, binding) {
+      // after an update, re-fill the content and then highlight
+      const targets = el.querySelectorAll('code');
+
+      for (let i = 0; i < targets.length; i += 1) {
+        const target = targets[i];
+        if (binding.value) {
+          target.innerHTML = binding.value;
+          hljs.highlightBlock(target);
+        }
+      }
+    },
+  });
+};
+
+module.exports = vueHighlightJS;

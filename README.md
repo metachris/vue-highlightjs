@@ -33,8 +33,22 @@ In your template, in order to highlight javascript code:
 * You can see a live example here: https://jsfiddle.net/metachris/1vz9oobc/
 * See this blog post for more information: https://www.metachris.com/2017/02/vuejs-syntax-highlighting-with-highlightjs/
 
+
+## Contributing
+
+Any sort of contributions and feedback is much appreciated. Just
+leave an issue or pull-request!
+
+This project uses the [AirBnB code style](https://github.com/airbnb/javascript).
+
+
 ## About
 
 Author: Chris Hager <chris@linuxuser.at> (https://www.metachris.com)
 
 License: MIT
+
+Contributors:
+
+* Chris Hager
+* [mr-krille](https://github.com/mr-krille)

@@ -1,4 +1,14 @@
 const assert = require('assert');
-var vueHighlightJS = require('./index')
+const vueHighlightJS = require('./index');
 
-assert.equal(typeof vueHighlightJS.install, 'function')
+const vueStub = {
+  directive: function directive(name, options) {
+    assert.equal(typeof name, 'string');
+    assert.equal(typeof options, 'object');
+    assert.equal(typeof options.bind, 'function');
+    assert.equal(typeof options.componentUpdated, 'function');
+  },
+};
+
+assert.equal(typeof vueHighlightJS.install, 'function');
+vueHighlightJS.install(vueStub);
