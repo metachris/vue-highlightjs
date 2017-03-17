@@ -1,7 +1,8 @@
+'use strict';
+
 const hljs = require('highlight.js');
 
 const vueHighlightJS = {};
-
 vueHighlightJS.install = function install(Vue) {
   Vue.directive('highlightjs', {
     deep: true,
