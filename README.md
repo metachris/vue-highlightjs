@@ -41,6 +41,8 @@ leave an issue or pull-request!
 
 This project uses the [AirBnB code style](https://github.com/airbnb/javascript).
 
+Please run `npm run lint` and `npm run test` before you submit a pull request! <3
+
 
 ## About
 
