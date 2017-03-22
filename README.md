@@ -55,3 +55,10 @@ Contributors:
 * Chris Hager
 * [mr-krille](https://github.com/mr-krille)
 * [Duoc Nguyen](https://github.com/nguyenvanduocit)
+
+
+## Changelog
+
+v1.2.1
+
+* Fixed displaying and highlighting HTML tags passed as value to the directive (thanks @nguyenvanduocit)
