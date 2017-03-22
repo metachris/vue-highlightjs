@@ -28,7 +28,7 @@ vueHighlightJS.install = function install(Vue) {
       for (let i = 0; i < targets.length; i += 1) {
         const target = targets[i];
         if (binding.value) {
-          target.innerHTML = binding.value;
+          target.textContent = binding.value;
           hljs.highlightBlock(target);
         }
       }
