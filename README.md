@@ -54,3 +54,4 @@ Contributors:
 
 * Chris Hager
 * [mr-krille](https://github.com/mr-krille)
+* [Duoc Nguyen](https://github.com/nguyenvanduocit)
