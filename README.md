@@ -59,6 +59,6 @@ Contributors:
 
 ## Changelog
 
-v1.2.1
+v1.2.2
 
 * Fixed displaying and highlighting HTML tags passed as value to the directive (thanks @nguyenvanduocit)
