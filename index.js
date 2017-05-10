@@ -9,7 +9,7 @@ vueHighlightJS.install = function install(Vue) {
     bind: function bind(el, binding) {
       // on first bind, highlight all targets
       const targets = el.querySelectorAll('code');
-      for (let i = 0; i < targets.length; i += 1) {
+      for (var i = 0; i < targets.length; i += 1) {
         const target = targets[i];
 
         if (binding.value) {
@@ -25,7 +25,7 @@ vueHighlightJS.install = function install(Vue) {
       // after an update, re-fill the content and then highlight
       const targets = el.querySelectorAll('code');
 
-      for (let i = 0; i < targets.length; i += 1) {
+      for (var i = 0; i < targets.length; i += 1) {
         const target = targets[i];
         if (binding.value) {
           target.textContent = binding.value;
