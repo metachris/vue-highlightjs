@@ -12,7 +12,7 @@ vueHighlightJS.install = function install(Vue) {
       for (var i = 0; i < targets.length; i += 1) {
         const target = targets[i];
 
-        if (binding.value) {
+        if (typeof binding.value === 'string') {
           // if a value is directly assigned to the directive, use this
           // instead of the element content.
           target.textContent = binding.value;
@@ -27,7 +27,7 @@ vueHighlightJS.install = function install(Vue) {
 
       for (var i = 0; i < targets.length; i += 1) {
         const target = targets[i];
-        if (binding.value) {
+        if (typeof binding.value === 'string') {
           target.textContent = binding.value;
           hljs.highlightBlock(target);
         }
