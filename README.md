@@ -52,9 +52,10 @@ License: MIT
 
 Contributors:
 
-* Chris Hager
+* [Chris Hager](https://www.metachris.com)
 * [mr-krille](https://github.com/mr-krille)
 * [Duoc Nguyen](https://github.com/nguyenvanduocit)
+* [Shu Ding](https://github.com/shudin)
 
 
 ## Changelog

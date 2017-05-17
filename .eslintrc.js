@@ -5,5 +5,6 @@ module.exports = {
     ],
   "rules": {
     "strict": [0, "global"],
+    "no-var": "off"
   }
 };
