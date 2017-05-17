@@ -60,6 +60,11 @@ Contributors:
 
 ## Changelog
 
+v1.3.1
+
+* Changed `const` to `var` for compatibility with PhantomJS and UglifyJS
+* [Bugfix](https://github.com/metachris/vue-highlightjs/pull/6) to allow empty content
+
 v1.2.2
 
 * Fixed displaying and highlighting HTML tags passed as value to the directive (thanks @nguyenvanduocit)
