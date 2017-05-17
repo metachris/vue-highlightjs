@@ -1,4 +1,8 @@
+# vue-highlightjs
+
 [Vue.js](https://vuejs.org/) syntax highlighting made easy, using [highlight.js](https://highlightjs.org/).
+
+[![Build Status](https://travis-ci.org/metachris/vue-highlightjs.svg?branch=master)](https://travis-ci.org/metachris/vue-highlightjs)
 
 ## Quickstart
 
