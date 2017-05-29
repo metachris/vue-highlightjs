@@ -8,6 +8,8 @@
 
 ### Installation
 
+Simply install the [npm package `vue-highlightjs`](https://www.npmjs.com/package/vue-highlightjs):
+
     npm install --save vue-highlightjs
 
 ### Using vue-highlightjs
