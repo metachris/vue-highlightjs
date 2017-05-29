@@ -1,6 +1,7 @@
 'use strict';
 
 var hljs = require('highlight.js');
+// import hljs from 'highlight.js';
 
 var vueHighlightJS = {};
 vueHighlightJS.install = function install(Vue) {
@@ -37,7 +38,7 @@ vueHighlightJS.install = function install(Vue) {
           hljs.highlightBlock(target);
         }
       }
-    },
+    }
   });
 };
 
