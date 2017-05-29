@@ -61,7 +61,7 @@ describe('highlighting dynamic code', () => {
     vm.sourcecode = '';
     Vue.nextTick(function () {
       result = vm.$el.innerHTML;
-      console.log('result', result);
+      // console.log('result', result);
       expect(result).toEqual('<pre><code class="javascript hljs"></code></pre>');
     });
   });
