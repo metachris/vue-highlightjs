@@ -34,8 +34,9 @@ In your template, in order to highlight javascript code:
 ```
 ---
 
-* You can see a live example here: https://jsfiddle.net/metachris/1vz9oobc/
-* See this blog post for more information: https://www.metachris.com/2017/02/vuejs-syntax-highlighting-with-highlightjs/
+* You can see a live example here: https://www.python-boilerplate.com/
+* Fiddle with it: https://jsfiddle.net/metachris/1vz9oobc/
+* See also this blog post for more information: https://www.metachris.com/2017/02/vuejs-syntax-highlighting-with-highlightjs/
 
 
 ## Contributing
