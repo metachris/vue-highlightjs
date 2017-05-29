@@ -65,6 +65,10 @@ Contributors:
 
 ## Changelog
 
+v1.3.3
+
+* Documentation
+
 v1.3.1
 
 * Changed `const` to `var` for compatibility with PhantomJS and UglifyJS
