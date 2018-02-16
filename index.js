@@ -4,7 +4,8 @@ var hljs = require('highlight.js');
 // import hljs from 'highlight.js';
 
 var vueHighlightJS = {};
-vueHighlightJS.install = function install(Vue) {
+vueHighlightJS.install = function install(Vue, options) {
+  hljs.configure(options);
   Vue.directive('highlightjs', {
     deep: true,
     bind: function bind(el, binding) {
