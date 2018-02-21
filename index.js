@@ -35,8 +35,8 @@ vueHighlightJS.install = function install(Vue) {
         target = targets[i];
         if (typeof binding.value === 'string') {
           target.textContent = binding.value;
-          hljs.highlightBlock(target);
         }
+        hljs.highlightBlock(target);
       }
     }
   });

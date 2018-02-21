@@ -66,3 +66,32 @@ describe('highlighting dynamic code', () => {
     });
   });
 });
+
+
+describe('highlighting code within dynamic content', () => {
+  let vm, result;
+
+  beforeEach(() => {
+    const template = `
+      <div id="app">
+        <div v-html="sourcecode" v-highlightjs></div>
+      </div>
+    `;
+
+    vm = new Vue({
+      template,
+      data: {
+        sourcecode: '<h2>foo</h2><pre><code class="javascript"></code></pre>',
+      },
+    }).$mount();
+  });
+
+  it('should updated highlighted block when updating code without any content', () => {
+    vm.sourcecode = '<h2>bar</h2><pre><code class="javascript"></code></pre>';
+    Vue.nextTick(function () {
+      result = vm.$el.innerHTML;
+      // console.log('result', result);
+      expect(result).toEqual('<div><h2>bar</h2><pre><code class="javascript hljs"></code></pre></div>');
+    });
+  });
+});
