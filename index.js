@@ -22,7 +22,7 @@ vueHighlightJS.install = function install(Vue) {
           target.textContent = binding.value;
         }
 
-        hljs.highlightBlock(target);
+        hljs.highlightElement(target);
       }
     },
     componentUpdated: function componentUpdated(el, binding) {
@@ -36,7 +36,7 @@ vueHighlightJS.install = function install(Vue) {
         if (typeof binding.value === 'string') {
           target.textContent = binding.value;
         }
-        hljs.highlightBlock(target);
+        hljs.highlightElement(target);
       }
     }
   });
