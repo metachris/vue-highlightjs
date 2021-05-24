@@ -1,5 +1,12 @@
 # vue-highlightjs
 
+**This project is superseded by the official Highlight.js Vue plugin:**
+
+* https://github.com/highlightjs/vue-plugin
+* https://www.npmjs.com/package/@highlightjs/vue-plugin
+
+---
+
 [Vue.js](https://vuejs.org/) syntax highlighting made easy, using [highlight.js](https://highlightjs.org/).
 
 [![Build Status](https://travis-ci.org/metachris/vue-highlightjs.svg?branch=master)](https://travis-ci.org/metachris/vue-highlightjs)
